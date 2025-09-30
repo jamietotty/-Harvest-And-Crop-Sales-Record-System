@@ -16,7 +16,7 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Staff_Dashboard());
         }
     }
 }

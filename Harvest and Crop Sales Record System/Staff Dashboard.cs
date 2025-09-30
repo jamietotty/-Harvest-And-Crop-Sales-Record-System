@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Harvest_and_Crop_Sales_Record_System
 {
-    public partial class Form1 : Form
+    public partial class Staff_Dashboard : Form
     {
-        public Form1()
+        public Staff_Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void Staff_Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addharvest_btn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
