@@ -19,12 +19,24 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         private void Staff_Dashboard_Load(object sender, EventArgs e)
         {
+            if (Session.LoggedInUser != null)
+            {
+                lblUserInfo.Text = Session.LoggedInUser.Username;
+            }
 
         }
 
         private void addharvest_btn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            Session.LoggedInUser = null;
+            this.Hide();
+            var login = new Login_Page();
+            login.Show();
         }
     }
 }

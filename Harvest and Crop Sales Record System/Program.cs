@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Harvest_and_Crop_Sales_Record_System
 {
     internal static class Program
@@ -16,7 +17,7 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Staff_Dashboard());
+            Application.Run(new Form1());
         }
     }
 }

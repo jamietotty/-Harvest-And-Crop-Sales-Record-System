@@ -35,6 +35,7 @@ namespace Harvest_and_Crop_Sales_Record_System
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string query = "SELECT * FROM dbo.Inventory_Reports";
+                //to call records on database
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
