@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Harvest_Management));
             this.label1 = new System.Windows.Forms.Label();
             this.datagrid_Harvestr = new System.Windows.Forms.DataGridView();
-            this.hCSRSdbDataSet = new Harvest_and_Crop_Sales_Record_System.HCSRSdbDataSet();
             this.hCSRSdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hCSRSdbDataSet = new Harvest_and_Crop_Sales_Record_System.HCSRSdbDataSet();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
@@ -51,8 +51,8 @@
             this.lblUserInfo = new System.Windows.Forms.Label();
             this.picUser = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Harvestr)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +69,7 @@
             this.label1.Location = new System.Drawing.Point(313, 130);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 78);
+            this.label1.Size = new System.Drawing.Size(356, 74);
             this.label1.TabIndex = 104;
             this.label1.Text = "HARVEST RECORDS\r\n\r\n";
             // 
@@ -79,16 +79,16 @@
             this.datagrid_Harvestr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid_Harvestr.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.datagrid_Harvestr.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.NullValue = null;
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Harvestr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Harvestr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagrid_Harvestr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid_Harvestr.DataSource = this.hCSRSdbDataSetBindingSource;
             this.datagrid_Harvestr.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -96,24 +96,24 @@
             this.datagrid_Harvestr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagrid_Harvestr.Name = "datagrid_Harvestr";
             this.datagrid_Harvestr.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.datagrid_Harvestr.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.datagrid_Harvestr.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.datagrid_Harvestr.RowTemplate.Height = 24;
             this.datagrid_Harvestr.Size = new System.Drawing.Size(1449, 677);
             this.datagrid_Harvestr.TabIndex = 105;
             this.datagrid_Harvestr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Harvestr_CellContentClick);
             // 
-            // hCSRSdbDataSet
-            // 
-            this.hCSRSdbDataSet.DataSetName = "HCSRSdbDataSet";
-            this.hCSRSdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // hCSRSdbDataSetBindingSource
             // 
             this.hCSRSdbDataSetBindingSource.DataSource = this.hCSRSdbDataSet;
             this.hCSRSdbDataSetBindingSource.Position = 0;
+            // 
+            // hCSRSdbDataSet
+            // 
+            this.hCSRSdbDataSet.DataSetName = "HCSRSdbDataSet";
+            this.hCSRSdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // contextMenuStrip1
             // 
@@ -224,6 +224,7 @@
             this.dashboard.Size = new System.Drawing.Size(137, 22);
             this.dashboard.TabIndex = 1;
             this.dashboard.Text = "DASHBOARD";
+            this.dashboard.Click += new System.EventHandler(this.dashboard_Click_1);
             // 
             // pictureBox1
             // 
@@ -302,8 +303,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Staff_Harvest_Management_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Harvestr)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
