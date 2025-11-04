@@ -30,12 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Sales_Management));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.harvestmanagement = new System.Windows.Forms.Label();
             this.salesreports = new System.Windows.Forms.Label();
-            this.inventorymonitor = new System.Windows.Forms.Label();
             this.salesmanagement = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -62,7 +61,6 @@
             this.panel1.BackColor = System.Drawing.Color.Honeydew;
             this.panel1.Controls.Add(this.harvestmanagement);
             this.panel1.Controls.Add(this.salesreports);
-            this.panel1.Controls.Add(this.inventorymonitor);
             this.panel1.Controls.Add(this.salesmanagement);
             this.panel1.Controls.Add(this.dashboard);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -83,30 +81,20 @@
             this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
             this.harvestmanagement.TabIndex = 103;
             this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
+            this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click);
             // 
             // salesreports
             // 
             this.salesreports.AutoSize = true;
             this.salesreports.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesreports.ForeColor = System.Drawing.Color.DarkGreen;
-            this.salesreports.Location = new System.Drawing.Point(51, 508);
+            this.salesreports.Location = new System.Drawing.Point(51, 423);
             this.salesreports.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.salesreports.Name = "salesreports";
             this.salesreports.Size = new System.Drawing.Size(162, 22);
             this.salesreports.TabIndex = 5;
             this.salesreports.Text = "SALES REPORTS";
-            // 
-            // inventorymonitor
-            // 
-            this.inventorymonitor.AutoSize = true;
-            this.inventorymonitor.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventorymonitor.ForeColor = System.Drawing.Color.DarkGreen;
-            this.inventorymonitor.Location = new System.Drawing.Point(5, 430);
-            this.inventorymonitor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.inventorymonitor.Name = "inventorymonitor";
-            this.inventorymonitor.Size = new System.Drawing.Size(269, 22);
-            this.inventorymonitor.TabIndex = 4;
-            this.inventorymonitor.Text = "INVENTORY MONITORING";
+            this.salesreports.Click += new System.EventHandler(this.salesreports_Click);
             // 
             // salesmanagement
             // 
@@ -119,6 +107,7 @@
             this.salesmanagement.Size = new System.Drawing.Size(218, 22);
             this.salesmanagement.TabIndex = 3;
             this.salesmanagement.Text = "SALES MANAGEMENT\r\n";
+            this.salesmanagement.Click += new System.EventHandler(this.salesmanagement_Click);
             // 
             // dashboard
             // 
@@ -131,6 +120,7 @@
             this.dashboard.Size = new System.Drawing.Size(137, 22);
             this.dashboard.TabIndex = 1;
             this.dashboard.Text = "DASHBOARD";
+            this.dashboard.Click += new System.EventHandler(this.dashboard_Click);
             // 
             // pictureBox1
             // 
@@ -227,26 +217,26 @@
             this.datagrid_Sales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid_Sales.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.datagrid_Sales.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.NullValue = null;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.NullValue = null;
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.datagrid_Sales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid_Sales.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.datagrid_Sales.Location = new System.Drawing.Point(374, 210);
             this.datagrid_Sales.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagrid_Sales.Name = "datagrid_Sales";
             this.datagrid_Sales.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.datagrid_Sales.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.datagrid_Sales.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.datagrid_Sales.RowTemplate.Height = 24;
             this.datagrid_Sales.Size = new System.Drawing.Size(1449, 677);
             this.datagrid_Sales.TabIndex = 115;
@@ -278,6 +268,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.nav_bar);
             this.Name = "Staff_Sales_Management";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff_Sales_Management";
             this.Load += new System.EventHandler(this.Staff_Sales_Management_Load);
             this.panel1.ResumeLayout(false);
@@ -299,7 +290,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label harvestmanagement;
         private System.Windows.Forms.Label salesreports;
-        private System.Windows.Forms.Label inventorymonitor;
         private System.Windows.Forms.Label salesmanagement;
         private System.Windows.Forms.Label dashboard;
         private System.Windows.Forms.PictureBox pictureBox1;

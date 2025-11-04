@@ -54,9 +54,9 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         private void LoadSales()
         {
-            string connectionString = @"Server=JMD\JAM;Database=HCSRSdb;Trusted_Connection=True;";
+           
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
                 string query = "SELECT * FROM dbo.Sales_Records";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
@@ -66,6 +66,8 @@ namespace Harvest_and_Crop_Sales_Record_System
                 datagrid_Sales.AutoGenerateColumns = true;
                 datagrid_Sales.DataSource = dt;
             }
+
+           
         }
 
      
@@ -82,6 +84,34 @@ namespace Harvest_and_Crop_Sales_Record_System
             {
                 LoadSales();
             }
+        }
+
+        private void dashboard_Click(object sender, EventArgs e)
+        {
+            Admin_Dashboard newAdmin = new Admin_Dashboard();
+            newAdmin.Show();
+            this.Hide();
+        }
+
+        private void harvestmanagement_Click(object sender, EventArgs e)
+        {
+            Staff_Harvest_Management newUsers = new Staff_Harvest_Management();
+            newUsers.Show();
+            this.Hide();
+        }
+
+        private void salesmanagement_Click(object sender, EventArgs e)
+        {
+            Staff_Sales_Management newHarvest = new Staff_Sales_Management();
+            newHarvest.Show();
+            this.Hide();
+        }
+
+        private void salesreports_Click(object sender, EventArgs e)
+        {
+            Staff_Sales_Reports newReports = new Staff_Sales_Reports();
+            newReports.Show();
+            this.Hide();
         }
     }
 }

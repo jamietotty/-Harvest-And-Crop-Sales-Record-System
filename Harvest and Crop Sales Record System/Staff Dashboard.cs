@@ -49,12 +49,7 @@ namespace Harvest_and_Crop_Sales_Record_System
             this.Hide();
         }
 
-        private void inventorymonitor_Click(object sender, EventArgs e)
-        {
-            Staff_Inventory_Monitoring newSales = new Staff_Inventory_Monitoring();
-            newSales.Show();
-            this.Hide();
-        }
+       
 
         private void salesreports_Click(object sender, EventArgs e)
         {

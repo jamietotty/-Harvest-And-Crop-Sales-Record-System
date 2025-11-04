@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.harvestmanagement = new System.Windows.Forms.Label();
             this.salesreports = new System.Windows.Forms.Label();
-            this.inventorymonitor = new System.Windows.Forms.Label();
             this.salesmanagement = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,7 +42,6 @@
             this.picUser = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.harvestmanagement = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.nav_bar.SuspendLayout();
@@ -56,7 +55,6 @@
             this.panel1.BackColor = System.Drawing.Color.Honeydew;
             this.panel1.Controls.Add(this.harvestmanagement);
             this.panel1.Controls.Add(this.salesreports);
-            this.panel1.Controls.Add(this.inventorymonitor);
             this.panel1.Controls.Add(this.salesmanagement);
             this.panel1.Controls.Add(this.dashboard);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -66,31 +64,31 @@
             this.panel1.Size = new System.Drawing.Size(280, 1042);
             this.panel1.TabIndex = 101;
             // 
+            // harvestmanagement
+            // 
+            this.harvestmanagement.AutoSize = true;
+            this.harvestmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.harvestmanagement.ForeColor = System.Drawing.Color.DarkGreen;
+            this.harvestmanagement.Location = new System.Drawing.Point(15, 267);
+            this.harvestmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.harvestmanagement.Name = "harvestmanagement";
+            this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
+            this.harvestmanagement.TabIndex = 103;
+            this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
+            this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click);
+            // 
             // salesreports
             // 
             this.salesreports.AutoSize = true;
             this.salesreports.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesreports.ForeColor = System.Drawing.Color.DarkGreen;
-            this.salesreports.Location = new System.Drawing.Point(51, 508);
+            this.salesreports.Location = new System.Drawing.Point(62, 420);
             this.salesreports.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.salesreports.Name = "salesreports";
             this.salesreports.Size = new System.Drawing.Size(162, 22);
             this.salesreports.TabIndex = 5;
             this.salesreports.Text = "SALES REPORTS";
             this.salesreports.Click += new System.EventHandler(this.salesreports_Click);
-            // 
-            // inventorymonitor
-            // 
-            this.inventorymonitor.AutoSize = true;
-            this.inventorymonitor.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventorymonitor.ForeColor = System.Drawing.Color.DarkGreen;
-            this.inventorymonitor.Location = new System.Drawing.Point(5, 430);
-            this.inventorymonitor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.inventorymonitor.Name = "inventorymonitor";
-            this.inventorymonitor.Size = new System.Drawing.Size(269, 22);
-            this.inventorymonitor.TabIndex = 4;
-            this.inventorymonitor.Text = "INVENTORY MONITORING";
-            this.inventorymonitor.Click += new System.EventHandler(this.inventorymonitor_Click);
             // 
             // salesmanagement
             // 
@@ -196,19 +194,6 @@
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
-            // harvestmanagement
-            // 
-            this.harvestmanagement.AutoSize = true;
-            this.harvestmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.harvestmanagement.ForeColor = System.Drawing.Color.DarkGreen;
-            this.harvestmanagement.Location = new System.Drawing.Point(15, 267);
-            this.harvestmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.harvestmanagement.Name = "harvestmanagement";
-            this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
-            this.harvestmanagement.TabIndex = 103;
-            this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
-            this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click);
-            // 
             // Staff_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -237,7 +222,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label salesreports;
-        private System.Windows.Forms.Label inventorymonitor;
         private System.Windows.Forms.Label salesmanagement;
         private System.Windows.Forms.Label dashboard;
         private System.Windows.Forms.PictureBox pictureBox1;

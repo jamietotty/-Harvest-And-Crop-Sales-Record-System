@@ -67,19 +67,6 @@ namespace Harvest_and_Crop_Sales_Record_System
 
     
 
-        private void inventorymonitor_Click(object sender, EventArgs e)
-        {
-            Staff_Inventory_Monitoring newSales = new Staff_Inventory_Monitoring();
-            newSales.Show();
-            this.Hide();
-        }
-
-        private void salesreports_Click(object sender, EventArgs e)
-        {
-            Staff_Sales_Reports newReports = new Staff_Sales_Reports();
-            newReports.Show();
-            this.Hide();
-        }
 
    
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -121,6 +108,13 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
             Staff_Dashboard newAdmin = new Staff_Dashboard();
             newAdmin.Show();
+            this.Hide();
+        }
+
+        private void salesreports_Click_1(object sender, EventArgs e)
+        {
+            Staff_Sales_Reports newReports = new Staff_Sales_Reports();
+            newReports.Show();
             this.Hide();
         }
     }

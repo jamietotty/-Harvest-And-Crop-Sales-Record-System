@@ -237,12 +237,6 @@
     <Compile Include="Staff Harvest Management.Designer.cs">
       <DependentUpon>Staff Harvest Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staff Inventory Monitoring.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Staff Inventory Monitoring.Designer.cs">
-      <DependentUpon>Staff Inventory Monitoring.cs</DependentUpon>
-    </Compile>
     <Compile Include="Staff Sales Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,11 +295,11 @@
     <EmbeddedResource Include="Staff Harvest Management.resx">
       <DependentUpon>Staff Harvest Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staff Inventory Monitoring.resx">
-      <DependentUpon>Staff Inventory Monitoring.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Staff Sales Management.resx">
       <DependentUpon>Staff Sales Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Sales Reports.resx">
+      <DependentUpon>Staff Sales Reports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Management.resx">
       <DependentUpon>User Management.cs</DependentUpon>
