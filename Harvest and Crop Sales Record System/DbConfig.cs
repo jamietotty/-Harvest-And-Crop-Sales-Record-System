@@ -9,6 +9,6 @@ namespace Harvest_and_Crop_Sales_Record_System
     internal class DbConfig
     {
         public static string ConnectionString { get; } =
-        @"Server=GANBADESKTOP\SQLEXPRESS;Database=HCSRSdb;Trusted_Connection=True;";
+        @"Server=JMD\JAM;Database=HCSRSdb;Trusted_Connection=True;";
     }
 }
