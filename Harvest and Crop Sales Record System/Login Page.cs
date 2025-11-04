@@ -19,22 +19,10 @@ namespace Harvest_and_Crop_Sales_Record_System
 
             this.Text = "Login Page";
 
-            cmb_role.Items.Add("Admin");
-            cmb_role.Items.Add("Staff");
-
         }
 
         private bool isPasswordVisible = false;
 
-        private void cmb_role_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            
-                string selectedRole = cmb_role.SelectedItem.ToString();
-                MessageBox.Show("You are logging in as " + selectedRole + ".");
-            
-                
-        }
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
@@ -42,16 +30,8 @@ namespace Harvest_and_Crop_Sales_Record_System
             string username = txt_username.Text;
             string password = txt_password.Text;
 
-            if (cmb_role.SelectedItem == null)
-            {
-                MessageBox.Show("Please select a role before logging in.");
-                return;
-            }
-
-            string role = cmb_role.SelectedItem.ToString();
-
             string query = "SELECT TOP 1 AccountID, Username, Role FROM Accounts " +
-                           "WHERE Username = @username AND Password = @password AND Role = @role";
+                           "WHERE Username = @username AND Password = @password";
 
             using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
@@ -60,7 +40,6 @@ namespace Harvest_and_Crop_Sales_Record_System
                 {
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", password); // ⚠️ plain text for now
-                    cmd.Parameters.AddWithValue("@role", role);
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
@@ -69,7 +48,6 @@ namespace Harvest_and_Crop_Sales_Record_System
 
                         string loggedInUsername = reader["Username"].ToString();
                         string loggedInRole = reader["Role"].ToString();
-
                         // ✅ Close reader before another query
                         reader.Close();
 
