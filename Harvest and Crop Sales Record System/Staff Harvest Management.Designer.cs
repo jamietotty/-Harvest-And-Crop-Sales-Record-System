@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Harvest_Management));
             this.label1 = new System.Windows.Forms.Label();
             this.datagrid_Harvestr = new System.Windows.Forms.DataGridView();
@@ -66,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(326, 130);
+            this.label1.Location = new System.Drawing.Point(313, 130);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(360, 78);
@@ -79,16 +79,16 @@
             this.datagrid_Harvestr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid_Harvestr.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.datagrid_Harvestr.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Harvestr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.NullValue = null;
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Harvestr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.datagrid_Harvestr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid_Harvestr.DataSource = this.hCSRSdbDataSetBindingSource;
             this.datagrid_Harvestr.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -96,10 +96,10 @@
             this.datagrid_Harvestr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagrid_Harvestr.Name = "datagrid_Harvestr";
             this.datagrid_Harvestr.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.datagrid_Harvestr.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.datagrid_Harvestr.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.datagrid_Harvestr.RowTemplate.Height = 24;
             this.datagrid_Harvestr.Size = new System.Drawing.Size(1449, 677);
             this.datagrid_Harvestr.TabIndex = 105;
@@ -174,6 +174,7 @@
             this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
             this.harvestmanagement.TabIndex = 103;
             this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
+            this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click_1);
             // 
             // salesreports
             // 
@@ -210,6 +211,7 @@
             this.salesmanagement.Size = new System.Drawing.Size(218, 22);
             this.salesmanagement.TabIndex = 3;
             this.salesmanagement.Text = "SALES MANAGEMENT\r\n";
+            this.salesmanagement.Click += new System.EventHandler(this.salesmanagement_Click_1);
             // 
             // dashboard
             // 
