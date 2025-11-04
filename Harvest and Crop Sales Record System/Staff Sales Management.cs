@@ -76,7 +76,7 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Add_New_Sales_Record addForm = new Add_New_Sales_Record();
+            Add_New_Harvest_Record addForm = new Add_New_Harvest_Record();
 
             if (addForm.ShowDialog() == DialogResult.OK)
             {
