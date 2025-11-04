@@ -74,6 +74,54 @@ namespace Harvest_and_Crop_Sales_Record_System
             this.Close();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void storagedetails_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCropname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtquantity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void harvestlocation_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void storage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpHarvestDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
