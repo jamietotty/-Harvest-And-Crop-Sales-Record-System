@@ -73,7 +73,7 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
             using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
-                string query = "SELECT * FROM dbo.Sales_Records";
+                string query = "SELECT * FROM dbo.MonthlySalesReport";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -87,6 +87,12 @@ namespace Harvest_and_Crop_Sales_Record_System
         private void Staff_Sales_Reports_Load(object sender, EventArgs e)
         {
             LoadReports();
+
+
+            if (Session.LoggedInUser != null)
+            {
+                lblUserInfo.Text = Session.LoggedInUser.Username;
+            }
         }
     }
 }

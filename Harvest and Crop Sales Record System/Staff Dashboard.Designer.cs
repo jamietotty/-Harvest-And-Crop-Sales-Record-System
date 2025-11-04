@@ -130,7 +130,7 @@
             // 
             // nav_bar
             // 
-            this.nav_bar.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.nav_bar.BackColor = System.Drawing.Color.SeaGreen;
             this.nav_bar.Controls.Add(this.panel2);
             this.nav_bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.nav_bar.ForeColor = System.Drawing.Color.DarkOliveGreen;
