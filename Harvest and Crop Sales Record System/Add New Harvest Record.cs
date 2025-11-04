@@ -14,12 +14,6 @@ namespace Harvest_and_Crop_Sales_Record_System
     public partial class Add_New_Harvest_Record : Form
     {
 
-        public string CropName { get; private set; }
-        public string Quantity { get; private set; }
-        public DateTime HarvestDate { get; private set; }
-        public string Location { get; private set; }
-        public string Storage { get; private set; }
-
         public Add_New_Harvest_Record()
         {
             InitializeComponent();

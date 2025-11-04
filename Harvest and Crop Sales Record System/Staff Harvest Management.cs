@@ -51,20 +51,21 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
 
         }
-
-        private void harvestmanagement_Click(object sender, EventArgs e)
+        private void harvestmanagement_Click_1(object sender, EventArgs e)
         {
             Staff_Harvest_Management newUsers = new Staff_Harvest_Management();
             newUsers.Show();
             this.Hide();
         }
 
-        private void salesmanagement_Click(object sender, EventArgs e)
+        private void salesmanagement_Click_1(object sender, EventArgs e)
         {
             Staff_Sales_Management newHarvest = new Staff_Sales_Management();
             newHarvest.Show();
             this.Hide();
         }
+
+    
 
         private void inventorymonitor_Click(object sender, EventArgs e)
         {
@@ -104,10 +105,7 @@ namespace Harvest_and_Crop_Sales_Record_System
             }
         }
 
-        private void lblUserInfo_Click(object sender, EventArgs e)
-        {
-            contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
-        }
+      
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -124,5 +122,7 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
             contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
         }
+
+     
     }
 }

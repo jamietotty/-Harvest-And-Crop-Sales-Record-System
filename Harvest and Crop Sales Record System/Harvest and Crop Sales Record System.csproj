@@ -292,6 +292,9 @@
     <EmbeddedResource Include="Staff Harvest Management.resx">
       <DependentUpon>Staff Harvest Management.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Staff Sales Management.resx">
+      <DependentUpon>Staff Sales Management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Management.resx">
       <DependentUpon>User Management.cs</DependentUpon>
     </EmbeddedResource>
