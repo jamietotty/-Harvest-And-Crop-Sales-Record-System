@@ -36,9 +36,8 @@ namespace Harvest_and_Crop_Sales_Record_System
         private void LoadUsers()
         {
             // Change connection string to match your setup
-            string connectionString = @"Server=JMD\JAM;Database=HCSRSdb;Trusted_Connection=True;";
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
                 string query = "SELECT * FROM dbo.Accounts"; 
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);

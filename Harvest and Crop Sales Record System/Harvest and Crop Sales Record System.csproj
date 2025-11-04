@@ -180,6 +180,7 @@
     <Compile Include="Admin Dashboard.Designer.cs">
       <DependentUpon>Admin Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DbConfig.cs" />
     <Compile Include="Harvest_Records.cs">
       <SubType>Form</SubType>
     </Compile>
