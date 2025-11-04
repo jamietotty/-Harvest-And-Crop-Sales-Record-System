@@ -174,12 +174,6 @@
     <Compile Include="Admin Dashboard.Designer.cs">
       <DependentUpon>Admin Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Harvest_Records.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +212,30 @@
     <Compile Include="Staff Dashboard.Designer.cs">
       <DependentUpon>Staff Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff Harvest Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Harvest Management.Designer.cs">
+      <DependentUpon>Staff Harvest Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Inventory Monitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Inventory Monitoring.Designer.cs">
+      <DependentUpon>Staff Inventory Monitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Sales Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Sales Management.Designer.cs">
+      <DependentUpon>Staff Sales Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Sales Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Sales Reports.Designer.cs">
+      <DependentUpon>Staff Sales Reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,9 +245,6 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Admin Dashboard.resx">
       <DependentUpon>Admin Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Harvest_Records.resx">
       <DependentUpon>Harvest_Records.cs</DependentUpon>
@@ -254,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff Dashboard.resx">
       <DependentUpon>Staff Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Harvest Management.resx">
+      <DependentUpon>Staff Harvest Management.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Management.resx">
       <DependentUpon>User Management.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace Harvest_and_Crop_Sales_Record_System
 {
-    partial class Staff_Dashboard
+    partial class Staff_Harvest_Management
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Harvest_Management));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.harvestmanagement = new System.Windows.Forms.Label();
             this.salesreports = new System.Windows.Forms.Label();
             this.inventorymonitor = new System.Windows.Forms.Label();
             this.salesmanagement = new System.Windows.Forms.Label();
@@ -40,14 +43,20 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUserInfo = new System.Windows.Forms.Label();
             this.picUser = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.datagrid_Harvestr = new System.Windows.Forms.DataGridView();
+            this.hCSRSdbDataSet = new Harvest_and_Crop_Sales_Record_System.HCSRSdbDataSet();
+            this.hCSRSdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.harvestmanagement = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.nav_bar.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid_Harvestr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +73,20 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(280, 1042);
-            this.panel1.TabIndex = 101;
+            this.panel1.TabIndex = 103;
+            // 
+            // harvestmanagement
+            // 
+            this.harvestmanagement.AutoSize = true;
+            this.harvestmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.harvestmanagement.ForeColor = System.Drawing.Color.DarkGreen;
+            this.harvestmanagement.Location = new System.Drawing.Point(15, 267);
+            this.harvestmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.harvestmanagement.Name = "harvestmanagement";
+            this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
+            this.harvestmanagement.TabIndex = 103;
+            this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
+            this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click);
             // 
             // salesreports
             // 
@@ -116,7 +138,7 @@
             this.dashboard.Size = new System.Drawing.Size(137, 22);
             this.dashboard.TabIndex = 1;
             this.dashboard.Text = "DASHBOARD";
-            this.dashboard.Click += new System.EventHandler(this.dashboard_Click_1);
+            this.dashboard.Click += new System.EventHandler(this.dashboard_Click);
             // 
             // pictureBox1
             // 
@@ -132,7 +154,7 @@
             // 
             // nav_bar
             // 
-            this.nav_bar.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.nav_bar.BackColor = System.Drawing.Color.SeaGreen;
             this.nav_bar.Controls.Add(this.panel2);
             this.nav_bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.nav_bar.ForeColor = System.Drawing.Color.DarkOliveGreen;
@@ -140,7 +162,7 @@
             this.nav_bar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nav_bar.Name = "nav_bar";
             this.nav_bar.Size = new System.Drawing.Size(1924, 94);
-            this.nav_bar.TabIndex = 100;
+            this.nav_bar.TabIndex = 102;
             // 
             // panel2
             // 
@@ -158,7 +180,7 @@
             // 
             this.lblUserInfo.AutoSize = true;
             this.lblUserInfo.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserInfo.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblUserInfo.ForeColor = System.Drawing.Color.Honeydew;
             this.lblUserInfo.Location = new System.Drawing.Point(75, 31);
             this.lblUserInfo.Name = "lblUserInfo";
             this.lblUserInfo.Size = new System.Drawing.Size(88, 23);
@@ -178,6 +200,60 @@
             this.picUser.TabIndex = 9;
             this.picUser.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Bright", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label1.Location = new System.Drawing.Point(326, 130);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(360, 78);
+            this.label1.TabIndex = 104;
+            this.label1.Text = "HARVEST RECORDS\r\n\r\n";
+            // 
+            // datagrid_Harvestr
+            // 
+            this.datagrid_Harvestr.AutoGenerateColumns = false;
+            this.datagrid_Harvestr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.datagrid_Harvestr.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.datagrid_Harvestr.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Harvestr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.datagrid_Harvestr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagrid_Harvestr.DataSource = this.hCSRSdbDataSetBindingSource;
+            this.datagrid_Harvestr.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.datagrid_Harvestr.Location = new System.Drawing.Point(385, 223);
+            this.datagrid_Harvestr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.datagrid_Harvestr.Name = "datagrid_Harvestr";
+            this.datagrid_Harvestr.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.datagrid_Harvestr.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.datagrid_Harvestr.RowTemplate.Height = 24;
+            this.datagrid_Harvestr.Size = new System.Drawing.Size(1449, 677);
+            this.datagrid_Harvestr.TabIndex = 105;
+            this.datagrid_Harvestr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Harvestr_CellContentClick);
+            // 
+            // hCSRSdbDataSet
+            // 
+            this.hCSRSdbDataSet.DataSetName = "HCSRSdbDataSet";
+            this.hCSRSdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hCSRSdbDataSetBindingSource
+            // 
+            this.hCSRSdbDataSetBindingSource.DataSource = this.hCSRSdbDataSet;
+            this.hCSRSdbDataSetBindingSource.Position = 0;
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -196,31 +272,20 @@
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
-            // harvestmanagement
-            // 
-            this.harvestmanagement.AutoSize = true;
-            this.harvestmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.harvestmanagement.ForeColor = System.Drawing.Color.DarkGreen;
-            this.harvestmanagement.Location = new System.Drawing.Point(15, 267);
-            this.harvestmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.harvestmanagement.Name = "harvestmanagement";
-            this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
-            this.harvestmanagement.TabIndex = 103;
-            this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
-            this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click);
-            // 
-            // Staff_Dashboard
+            // Staff_Harvest_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.datagrid_Harvestr);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.nav_bar);
-            this.Name = "Staff_Dashboard";
-            this.Text = "Staff_Dashboard";
+            this.Name = "Staff_Harvest_Management";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Staff_Harvest_Management";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Staff_Dashboard_Load);
+            this.Load += new System.EventHandler(this.Staff_Harvest_Management_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -228,14 +293,19 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid_Harvestr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label harvestmanagement;
         private System.Windows.Forms.Label salesreports;
         private System.Windows.Forms.Label inventorymonitor;
         private System.Windows.Forms.Label salesmanagement;
@@ -245,8 +315,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblUserInfo;
         private System.Windows.Forms.PictureBox picUser;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView datagrid_Harvestr;
+        private System.Windows.Forms.BindingSource hCSRSdbDataSetBindingSource;
+        private HCSRSdbDataSet hCSRSdbDataSet;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
-        private System.Windows.Forms.Label harvestmanagement;
     }
 }
