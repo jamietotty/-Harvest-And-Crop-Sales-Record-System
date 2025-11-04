@@ -363,4 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Ignore database configuration file (contains connection strings)
-DbConfig.cs
+Harvest and Crop Sales Record System/DbConfig.cs
