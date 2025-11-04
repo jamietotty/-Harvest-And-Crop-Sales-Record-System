@@ -168,6 +168,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add New Harvest Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New Harvest Record.Designer.cs">
+      <DependentUpon>Add New Harvest Record.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
       <DependentUpon>User Management.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="Add New Harvest Record.resx">
+      <DependentUpon>Add New Harvest Record.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin Dashboard.resx">
       <DependentUpon>Admin Dashboard.cs</DependentUpon>
     </EmbeddedResource>

@@ -109,5 +109,21 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
             contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Add_New_Harvest_Record addForm = new Add_New_Harvest_Record();
+
+            if (addForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadHarvest(); 
+            }
+
+        }
+
+        private void lblUserInfo_Click_1(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
+        }
     }
 }
