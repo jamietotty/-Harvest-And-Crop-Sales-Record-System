@@ -327,6 +327,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dashboard);
             this.Name = "Add_New_Sales_Record";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_New_Sales_Record";
             this.Load += new System.EventHandler(this.Add_New_Sales_Record_Load);
             this.ResumeLayout(false);

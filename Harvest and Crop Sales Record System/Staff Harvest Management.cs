@@ -81,13 +81,7 @@ namespace Harvest_and_Crop_Sales_Record_System
             this.Hide();
         }
 
-        private void dashboard_Click(object sender, EventArgs e)
-        {
-            Staff_Dashboard newAdmin = new Staff_Dashboard();
-            newAdmin.Show();
-            this.Hide();
-        }
-
+   
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Example: confirm logout
@@ -123,6 +117,11 @@ namespace Harvest_and_Crop_Sales_Record_System
             contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
         }
 
-     
+        private void dashboard_Click_1(object sender, EventArgs e)
+        {
+            Staff_Dashboard newAdmin = new Staff_Dashboard();
+            newAdmin.Show();
+            this.Hide();
+        }
     }
 }

@@ -68,7 +68,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
             this.label1.Location = new System.Drawing.Point(235, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 62);
+            this.label1.Size = new System.Drawing.Size(356, 74);
             this.label1.TabIndex = 104;
             this.label1.Text = "HARVEST RECORDS\r\n\r\n";
             // 
@@ -219,6 +219,7 @@
             this.dashboard.Size = new System.Drawing.Size(107, 17);
             this.dashboard.TabIndex = 1;
             this.dashboard.Text = "DASHBOARD";
+            this.dashboard.Click += new System.EventHandler(this.dashboard_Click_1);
             // 
             // pictureBox1
             // 
