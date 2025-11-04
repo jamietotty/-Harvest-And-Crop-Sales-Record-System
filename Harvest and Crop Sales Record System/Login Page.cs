@@ -50,11 +50,10 @@ namespace Harvest_and_Crop_Sales_Record_System
 
             string role = cmb_role.SelectedItem.ToString();
 
-            string connectionString = @"Server=JMD\JAM;Database=HCSRSdb;Trusted_Connection=True;";
             string query = "SELECT TOP 1 AccountID, Username, Role FROM Accounts " +
                            "WHERE Username = @username AND Password = @password AND Role = @role";
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
                 conn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, conn))

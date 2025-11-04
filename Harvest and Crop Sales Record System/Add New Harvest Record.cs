@@ -13,8 +13,6 @@ namespace Harvest_and_Crop_Sales_Record_System
 {
     public partial class Add_New_Harvest_Record : Form
     {
-        string connectionString = @"Server=JMD\JAM;Database=HCSRSdb;Trusted_Connection=True;";
-
 
         public Add_New_Harvest_Record()
         {
@@ -48,7 +46,7 @@ namespace Harvest_and_Crop_Sales_Record_System
                 return;
             }
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
                 conn.Open();
                 string query = "INSERT INTO harvest_records (CropName, QuantityKG, DateHarvested, Location, StorageDetails) " +
