@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore database configuration file (contains connection strings)
+Harvest and Crop Sales Record System/DbConfig.cs
