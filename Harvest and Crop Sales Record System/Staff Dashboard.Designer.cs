@@ -37,24 +37,24 @@
             this.lblUserInfo = new System.Windows.Forms.Label();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.viewharvest_btn = new System.Windows.Forms.Button();
+            this.addharvest_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.viewSalesRecords_btn = new System.Windows.Forms.Button();
+            this.addsales_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.viewsales_btn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.addharvest_btn = new System.Windows.Forms.Button();
-            this.viewharvest_btn = new System.Windows.Forms.Button();
-            this.viewSalesRecords_btn = new System.Windows.Forms.Button();
-            this.addsales_btn = new System.Windows.Forms.Button();
             this.lowstocks_btn = new System.Windows.Forms.Button();
             this.viewstorage_btn = new System.Windows.Forms.Button();
-            this.viewsales_btn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.nav_bar.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -166,6 +166,33 @@
             this.panel3.Size = new System.Drawing.Size(731, 329);
             this.panel3.TabIndex = 90;
             // 
+            // viewharvest_btn
+            // 
+            this.viewharvest_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.viewharvest_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewharvest_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewharvest_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.viewharvest_btn.Location = new System.Drawing.Point(340, 201);
+            this.viewharvest_btn.Name = "viewharvest_btn";
+            this.viewharvest_btn.Size = new System.Drawing.Size(321, 53);
+            this.viewharvest_btn.TabIndex = 3;
+            this.viewharvest_btn.Text = "View Harvest Records";
+            this.viewharvest_btn.UseVisualStyleBackColor = false;
+            // 
+            // addharvest_btn
+            // 
+            this.addharvest_btn.BackColor = System.Drawing.Color.ForestGreen;
+            this.addharvest_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addharvest_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addharvest_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addharvest_btn.Location = new System.Drawing.Point(340, 120);
+            this.addharvest_btn.Name = "addharvest_btn";
+            this.addharvest_btn.Size = new System.Drawing.Size(321, 53);
+            this.addharvest_btn.TabIndex = 2;
+            this.addharvest_btn.Text = "Add Harvest Record";
+            this.addharvest_btn.UseVisualStyleBackColor = false;
+            this.addharvest_btn.Click += new System.EventHandler(this.addharvest_btn_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -198,6 +225,32 @@
             this.panel1.Size = new System.Drawing.Size(731, 329);
             this.panel1.TabIndex = 91;
             // 
+            // viewSalesRecords_btn
+            // 
+            this.viewSalesRecords_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.viewSalesRecords_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewSalesRecords_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesRecords_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.viewSalesRecords_btn.Location = new System.Drawing.Point(337, 201);
+            this.viewSalesRecords_btn.Name = "viewSalesRecords_btn";
+            this.viewSalesRecords_btn.Size = new System.Drawing.Size(321, 53);
+            this.viewSalesRecords_btn.TabIndex = 5;
+            this.viewSalesRecords_btn.Text = "View Sales Records";
+            this.viewSalesRecords_btn.UseVisualStyleBackColor = false;
+            // 
+            // addsales_btn
+            // 
+            this.addsales_btn.BackColor = System.Drawing.Color.ForestGreen;
+            this.addsales_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addsales_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addsales_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addsales_btn.Location = new System.Drawing.Point(337, 120);
+            this.addsales_btn.Name = "addsales_btn";
+            this.addsales_btn.Size = new System.Drawing.Size(321, 53);
+            this.addsales_btn.TabIndex = 4;
+            this.addsales_btn.Text = "Add Sales Transaction";
+            this.addsales_btn.UseVisualStyleBackColor = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -228,6 +281,19 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(731, 329);
             this.panel4.TabIndex = 93;
+            // 
+            // viewsales_btn
+            // 
+            this.viewsales_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.viewsales_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewsales_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewsales_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.viewsales_btn.Location = new System.Drawing.Point(337, 152);
+            this.viewsales_btn.Name = "viewsales_btn";
+            this.viewsales_btn.Size = new System.Drawing.Size(321, 53);
+            this.viewsales_btn.TabIndex = 5;
+            this.viewsales_btn.Text = "View Monthly Sales";
+            this.viewsales_btn.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -261,79 +327,6 @@
             this.panel5.Size = new System.Drawing.Size(731, 329);
             this.panel5.TabIndex = 92;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Bright", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(244, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(312, 31);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Inventory Monitoring";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(14, 55);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(248, 249);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // addharvest_btn
-            // 
-            this.addharvest_btn.BackColor = System.Drawing.Color.ForestGreen;
-            this.addharvest_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addharvest_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addharvest_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addharvest_btn.Location = new System.Drawing.Point(340, 120);
-            this.addharvest_btn.Name = "addharvest_btn";
-            this.addharvest_btn.Size = new System.Drawing.Size(321, 53);
-            this.addharvest_btn.TabIndex = 2;
-            this.addharvest_btn.Text = "Add Harvest Record";
-            this.addharvest_btn.UseVisualStyleBackColor = false;
-            this.addharvest_btn.Click += new System.EventHandler(this.addharvest_btn_Click);
-            // 
-            // viewharvest_btn
-            // 
-            this.viewharvest_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.viewharvest_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.viewharvest_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewharvest_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.viewharvest_btn.Location = new System.Drawing.Point(340, 201);
-            this.viewharvest_btn.Name = "viewharvest_btn";
-            this.viewharvest_btn.Size = new System.Drawing.Size(321, 53);
-            this.viewharvest_btn.TabIndex = 3;
-            this.viewharvest_btn.Text = "View Harvest Records";
-            this.viewharvest_btn.UseVisualStyleBackColor = false;
-            // 
-            // viewSalesRecords_btn
-            // 
-            this.viewSalesRecords_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.viewSalesRecords_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.viewSalesRecords_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewSalesRecords_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.viewSalesRecords_btn.Location = new System.Drawing.Point(337, 201);
-            this.viewSalesRecords_btn.Name = "viewSalesRecords_btn";
-            this.viewSalesRecords_btn.Size = new System.Drawing.Size(321, 53);
-            this.viewSalesRecords_btn.TabIndex = 5;
-            this.viewSalesRecords_btn.Text = "View Sales Records";
-            this.viewSalesRecords_btn.UseVisualStyleBackColor = false;
-            // 
-            // addsales_btn
-            // 
-            this.addsales_btn.BackColor = System.Drawing.Color.ForestGreen;
-            this.addsales_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addsales_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addsales_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addsales_btn.Location = new System.Drawing.Point(337, 120);
-            this.addsales_btn.Name = "addsales_btn";
-            this.addsales_btn.Size = new System.Drawing.Size(321, 53);
-            this.addsales_btn.TabIndex = 4;
-            this.addsales_btn.Text = "Add Sales Transaction";
-            this.addsales_btn.UseVisualStyleBackColor = false;
-            // 
             // lowstocks_btn
             // 
             this.lowstocks_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
@@ -360,18 +353,25 @@
             this.viewstorage_btn.Text = "Check Current Storage";
             this.viewstorage_btn.UseVisualStyleBackColor = false;
             // 
-            // viewsales_btn
+            // label4
             // 
-            this.viewsales_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.viewsales_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.viewsales_btn.Font = new System.Drawing.Font("Lucida Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewsales_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.viewsales_btn.Location = new System.Drawing.Point(337, 152);
-            this.viewsales_btn.Name = "viewsales_btn";
-            this.viewsales_btn.Size = new System.Drawing.Size(321, 53);
-            this.viewsales_btn.TabIndex = 5;
-            this.viewsales_btn.Text = "View Monthly Sales";
-            this.viewsales_btn.UseVisualStyleBackColor = false;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Bright", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(244, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(312, 31);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Inventory Monitoring";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(14, 55);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(248, 249);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
             // 
             // Staff_Dashboard
             // 

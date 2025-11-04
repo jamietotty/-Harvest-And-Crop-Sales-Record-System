@@ -34,22 +34,6 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         }
 
-     
-
-        private void users_btn_Click_1(object sender, EventArgs e)
-        {
-            User_Management newUsers = new User_Management();
-            newUsers.Show();
-            this.Hide();
-        }
-
-        private void dashboard_btn_Click_1(object sender, EventArgs e)
-        {
-            Admin_Dashboard newAdmin = new Admin_Dashboard();
-            newAdmin.Show();
-            this.Hide();
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -58,40 +42,71 @@ namespace Harvest_and_Crop_Sales_Record_System
         private void lblUserInfo_Click(object sender, EventArgs e)
         {
 
+            contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
         }
 
-        private void logout_btn_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            Session.LoggedInUser = null;
-            this.Hide();
-            var login = new Login_Page();
-            login.Show();
+
         }
 
-        private void harvestrecord_btn_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            Harvest_Records newHarvest = new Harvest_Records();
-            newHarvest.Show();
+            Admin_Dashboard newAdmin = new Admin_Dashboard();
+            newAdmin.Show();
             this.Hide();
         }
 
-        private void sales_btn_Click(object sender, EventArgs e)
+    
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Example: confirm logout
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?",
+                                                  "Confirm Logout",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Session.LoggedInUser = null;
+                this.Hide();
+                var login = new Login_Page();
+                login.Show();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
             Sales newSales = new Sales();
             newSales.Show();
             this.Hide();
         }
 
-        private void reports_btn_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Harvest_Records newHarvest = new Harvest_Records();
+            newHarvest.Show();
+            this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
             Reports newReport = new Reports();
             newReport.Show();
             this.Hide();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-
+            User_Management newUsers = new User_Management();
+            newUsers.Show();
+            this.Hide();
         }
     }
 }

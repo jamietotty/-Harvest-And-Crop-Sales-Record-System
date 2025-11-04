@@ -45,41 +45,65 @@ namespace Harvest_and_Crop_Sales_Record_System
             }
 
         }
-        //--------------------------NAVBAR
-        private void admindashboard_btn_Click(object sender, EventArgs e)
+        //-----------------------------NAVBAR-----------------------
+
+        private void dashboard_Click(object sender, EventArgs e)
         {
             Admin_Dashboard newAdmin = new Admin_Dashboard();
             newAdmin.Show();
             this.Hide();
         }
 
-        private void users_btn_Click(object sender, EventArgs e)
+
+        private void usermanagement_Click_1(object sender, EventArgs e)
         {
             User_Management newUsers = new User_Management();
             newUsers.Show();
             this.Hide();
         }
 
-        private void harvest_btn_Click(object sender, EventArgs e)
+        private void harvestrecords_Click(object sender, EventArgs e)
         {
             Harvest_Records newHarvest = new Harvest_Records();
             newHarvest.Show();
             this.Hide();
         }
 
-        private void sales_btn_Click(object sender, EventArgs e)
+        private void salesrecords_Click(object sender, EventArgs e)
         {
             Sales newSales = new Sales();
             newSales.Show();
             this.Hide();
         }
 
-        private void logout_btn_Click(object sender, EventArgs e)
+        private void inventoryrecords_Click_1(object sender, EventArgs e)
         {
-            Session.LoggedInUser = null;
+            Reports newReports = new Reports();
+            newReports.Show();
             this.Hide();
-            var login = new Login_Page();
-            login.Show();
+        }
+
+        private void lblUserInfo_Click_1(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
+
+        }
+
+        private void logOutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            // Example: confirm logout
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?",
+                                                  "Confirm Logout",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Session.LoggedInUser = null;
+                this.Hide();
+                var login = new Login_Page();
+                login.Show();
+            }
         }
     }
 }
