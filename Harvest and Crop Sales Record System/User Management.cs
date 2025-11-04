@@ -221,7 +221,9 @@ namespace Harvest_and_Crop_Sales_Record_System
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+
+        private void addUser_Click(object sender, EventArgs e)
         {
             AddNewUser form = new AddNewUser();
             if (form.ShowDialog() == DialogResult.OK)

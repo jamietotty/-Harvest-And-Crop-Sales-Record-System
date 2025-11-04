@@ -41,7 +41,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtCropname = new System.Windows.Forms.TextBox();
             this.location = new System.Windows.Forms.TextBox();
-            this.AmountSold = new System.Windows.Forms.TextBox();
             this.csaunits = new System.Windows.Forms.TextBox();
             this.restounits = new System.Windows.Forms.TextBox();
             this.marketunits = new System.Windows.Forms.TextBox();
@@ -51,6 +50,8 @@
             this.cancelbtn = new System.Windows.Forms.Button();
             this.dtpDateofSale = new System.Windows.Forms.DateTimePicker();
             this.savesales = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.priceperKg = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // dashboard
@@ -126,7 +127,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label5.Location = new System.Drawing.Point(13, 261);
+            this.label5.Location = new System.Drawing.Point(12, 429);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(148, 23);
@@ -139,7 +140,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label6.Location = new System.Drawing.Point(13, 304);
+            this.label6.Location = new System.Drawing.Point(13, 265);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 23);
@@ -152,7 +153,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label7.Location = new System.Drawing.Point(13, 430);
+            this.label7.Location = new System.Drawing.Point(13, 391);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 23);
@@ -165,7 +166,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label8.Location = new System.Drawing.Point(13, 349);
+            this.label8.Location = new System.Drawing.Point(13, 310);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(170, 23);
@@ -178,7 +179,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label9.Location = new System.Drawing.Point(13, 391);
+            this.label9.Location = new System.Drawing.Point(13, 352);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(175, 23);
@@ -191,12 +192,12 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label10.Location = new System.Drawing.Point(13, 477);
+            this.label10.Location = new System.Drawing.Point(13, 466);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(198, 23);
+            this.label10.Size = new System.Drawing.Size(208, 23);
             this.label10.TabIndex = 13;
-            this.label10.Text = "Payment Received";
+            this.label10.Text = "Payment Received?";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtCropname
@@ -213,55 +214,52 @@
             this.location.Size = new System.Drawing.Size(283, 22);
             this.location.TabIndex = 15;
             // 
-            // AmountSold
-            // 
-            this.AmountSold.Location = new System.Drawing.Point(247, 225);
-            this.AmountSold.Name = "AmountSold";
-            this.AmountSold.Size = new System.Drawing.Size(206, 22);
-            this.AmountSold.TabIndex = 16;
-            this.AmountSold.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
             // csaunits
             // 
-            this.csaunits.Location = new System.Drawing.Point(170, 307);
+            this.csaunits.Location = new System.Drawing.Point(170, 268);
             this.csaunits.Name = "csaunits";
-            this.csaunits.Size = new System.Drawing.Size(173, 22);
+            this.csaunits.Size = new System.Drawing.Size(219, 22);
             this.csaunits.TabIndex = 18;
+            this.csaunits.TextChanged += new System.EventHandler(this.csaunits_TextChanged_1);
             // 
             // restounits
             // 
-            this.restounits.Location = new System.Drawing.Point(199, 394);
+            this.restounits.Location = new System.Drawing.Point(199, 355);
             this.restounits.Name = "restounits";
-            this.restounits.Size = new System.Drawing.Size(144, 22);
+            this.restounits.Size = new System.Drawing.Size(190, 22);
             this.restounits.TabIndex = 19;
+            this.restounits.TextChanged += new System.EventHandler(this.restounits_TextChanged_1);
             // 
             // marketunits
             // 
-            this.marketunits.Location = new System.Drawing.Point(199, 433);
+            this.marketunits.Location = new System.Drawing.Point(199, 394);
             this.marketunits.Name = "marketunits";
-            this.marketunits.Size = new System.Drawing.Size(144, 22);
+            this.marketunits.Size = new System.Drawing.Size(190, 22);
             this.marketunits.TabIndex = 21;
+            this.marketunits.TextChanged += new System.EventHandler(this.marketunits_TextChanged_1);
             // 
             // payment
             // 
-            this.payment.Location = new System.Drawing.Point(233, 480);
+            this.payment.Location = new System.Drawing.Point(233, 469);
             this.payment.Name = "payment";
-            this.payment.Size = new System.Drawing.Size(110, 22);
+            this.payment.Size = new System.Drawing.Size(156, 22);
             this.payment.TabIndex = 22;
             // 
             // total
             // 
-            this.total.Location = new System.Drawing.Point(247, 264);
+            this.total.Location = new System.Drawing.Point(199, 432);
             this.total.Name = "total";
-            this.total.Size = new System.Drawing.Size(206, 22);
+            this.total.Size = new System.Drawing.Size(190, 22);
             this.total.TabIndex = 23;
+            this.total.TextChanged += new System.EventHandler(this.total_TextChanged);
             // 
             // wholsesale
             // 
-            this.wholsesale.Location = new System.Drawing.Point(199, 349);
+            this.wholsesale.Location = new System.Drawing.Point(199, 310);
             this.wholsesale.Name = "wholsesale";
-            this.wholsesale.Size = new System.Drawing.Size(144, 22);
+            this.wholsesale.Size = new System.Drawing.Size(190, 22);
             this.wholsesale.TabIndex = 24;
+            this.wholsesale.TextChanged += new System.EventHandler(this.wholsesale_TextChanged_1);
             // 
             // cancelbtn
             // 
@@ -297,12 +295,35 @@
             this.savesales.UseVisualStyleBackColor = false;
             this.savesales.Click += new System.EventHandler(this.savesales_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Lucida Bright", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label11.Location = new System.Drawing.Point(13, 489);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(201, 15);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "(Type 1 for YES and 0 for NO)";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // priceperKg
+            // 
+            this.priceperKg.Location = new System.Drawing.Point(204, 225);
+            this.priceperKg.Name = "priceperKg";
+            this.priceperKg.Size = new System.Drawing.Size(185, 22);
+            this.priceperKg.TabIndex = 30;
+            this.priceperKg.TextChanged += new System.EventHandler(this.priceperKg_TextChanged);
+            // 
             // Add_New_Sales_Record
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(492, 621);
+            this.Controls.Add(this.priceperKg);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.savesales);
             this.Controls.Add(this.dtpDateofSale);
             this.Controls.Add(this.cancelbtn);
@@ -312,7 +333,6 @@
             this.Controls.Add(this.marketunits);
             this.Controls.Add(this.restounits);
             this.Controls.Add(this.csaunits);
-            this.Controls.Add(this.AmountSold);
             this.Controls.Add(this.location);
             this.Controls.Add(this.txtCropname);
             this.Controls.Add(this.label10);
@@ -327,7 +347,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dashboard);
             this.Name = "Add_New_Sales_Record";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add_New_Sales_Record";
             this.Load += new System.EventHandler(this.Add_New_Sales_Record_Load);
             this.ResumeLayout(false);
@@ -350,7 +370,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCropname;
         private System.Windows.Forms.TextBox location;
-        private System.Windows.Forms.TextBox AmountSold;
         private System.Windows.Forms.TextBox csaunits;
         private System.Windows.Forms.TextBox restounits;
         private System.Windows.Forms.TextBox marketunits;
@@ -360,5 +379,7 @@
         private System.Windows.Forms.Button cancelbtn;
         private System.Windows.Forms.DateTimePicker dtpDateofSale;
         private System.Windows.Forms.Button savesales;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox priceperKg;
     }
 }
