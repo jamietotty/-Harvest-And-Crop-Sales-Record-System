@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Sales_Reports));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.harvestmanagement = new System.Windows.Forms.Label();
             this.salesreports = new System.Windows.Forms.Label();
@@ -46,6 +46,8 @@
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datagrid_Sales = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.hCSRSdbDataSet = new Harvest_and_Crop_Sales_Record_System.HCSRSdbDataSet();
+            this.hCSRSdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.nav_bar.SuspendLayout();
@@ -53,6 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Sales)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -201,29 +205,32 @@
             // 
             // datagrid_Sales
             // 
+            this.datagrid_Sales.AllowUserToOrderColumns = true;
+            this.datagrid_Sales.AutoGenerateColumns = false;
             this.datagrid_Sales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid_Sales.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.datagrid_Sales.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.NullValue = null;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagrid_Sales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagrid_Sales.DataSource = this.hCSRSdbDataSetBindingSource;
             this.datagrid_Sales.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.datagrid_Sales.Location = new System.Drawing.Point(423, 214);
             this.datagrid_Sales.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagrid_Sales.Name = "datagrid_Sales";
             this.datagrid_Sales.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.datagrid_Sales.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.datagrid_Sales.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.datagrid_Sales.RowTemplate.Height = 24;
             this.datagrid_Sales.Size = new System.Drawing.Size(1449, 677);
             this.datagrid_Sales.TabIndex = 116;
@@ -239,6 +246,16 @@
             this.label1.Size = new System.Drawing.Size(461, 37);
             this.label1.TabIndex = 117;
             this.label1.Text = "MONTHLY SALES REPORT";
+            // 
+            // hCSRSdbDataSet
+            // 
+            this.hCSRSdbDataSet.DataSetName = "HCSRSdbDataSet";
+            this.hCSRSdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hCSRSdbDataSetBindingSource
+            // 
+            this.hCSRSdbDataSetBindingSource.DataSource = this.hCSRSdbDataSet;
+            this.hCSRSdbDataSetBindingSource.Position = 0;
             // 
             // Staff_Sales_Reports
             // 
@@ -262,6 +279,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Sales)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,5 +302,7 @@
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.DataGridView datagrid_Sales;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource hCSRSdbDataSetBindingSource;
+        private HCSRSdbDataSet hCSRSdbDataSet;
     }
 }

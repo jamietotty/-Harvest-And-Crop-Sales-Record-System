@@ -78,8 +78,27 @@ namespace Harvest_and_Crop_Sales_Record_System
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
 
+               
+
                 datagrid_Sales.AutoGenerateColumns = true;
                 datagrid_Sales.DataSource = dt;
+
+                // ✅ Rename DataGridView column headers here
+                if (datagrid_Sales.Columns.Contains("MonthName"))
+                    datagrid_Sales.Columns["MonthName"].HeaderText = "Month";
+
+                if (datagrid_Sales.Columns.Contains("Year"))
+                    datagrid_Sales.Columns["Year"].HeaderText = "Year";
+
+                if (datagrid_Sales.Columns.Contains("TotalCropsSold"))
+                    datagrid_Sales.Columns["TotalCropsSold"].HeaderText = "Total Crops Sold";
+
+                if (datagrid_Sales.Columns.Contains("TotalRevenue"))
+                    datagrid_Sales.Columns["TotalRevenue"].HeaderText = "Total Income (₱)";
+
+                if (datagrid_Sales.Columns.Contains("MostSoldCrop"))
+                    datagrid_Sales.Columns["MostSoldCrop"].HeaderText = "Top-Selling Crop";
+
             }
         }
 
