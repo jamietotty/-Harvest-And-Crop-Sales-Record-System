@@ -21,7 +21,7 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         private void dashboard_Click(object sender, EventArgs e)
         {
-            Admin_Dashboard newAdmin = new Admin_Dashboard();
+            Staff_Dashboard newAdmin = new Staff_Dashboard();
             newAdmin.Show();
             this.Hide();
         }

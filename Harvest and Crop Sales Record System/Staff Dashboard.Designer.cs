@@ -59,9 +59,9 @@
             this.panel1.Controls.Add(this.dashboard);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 1042);
+            this.panel1.Size = new System.Drawing.Size(210, 847);
             this.panel1.TabIndex = 101;
             // 
             // harvestmanagement
@@ -69,10 +69,9 @@
             this.harvestmanagement.AutoSize = true;
             this.harvestmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.harvestmanagement.ForeColor = System.Drawing.Color.DarkGreen;
-            this.harvestmanagement.Location = new System.Drawing.Point(15, 267);
-            this.harvestmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.harvestmanagement.Location = new System.Drawing.Point(11, 217);
             this.harvestmanagement.Name = "harvestmanagement";
-            this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
+            this.harvestmanagement.Size = new System.Drawing.Size(197, 17);
             this.harvestmanagement.TabIndex = 103;
             this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
             this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click);
@@ -82,10 +81,9 @@
             this.salesreports.AutoSize = true;
             this.salesreports.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesreports.ForeColor = System.Drawing.Color.DarkGreen;
-            this.salesreports.Location = new System.Drawing.Point(62, 420);
-            this.salesreports.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.salesreports.Location = new System.Drawing.Point(46, 341);
             this.salesreports.Name = "salesreports";
-            this.salesreports.Size = new System.Drawing.Size(162, 22);
+            this.salesreports.Size = new System.Drawing.Size(128, 17);
             this.salesreports.TabIndex = 5;
             this.salesreports.Text = "SALES REPORTS";
             this.salesreports.Click += new System.EventHandler(this.salesreports_Click);
@@ -95,10 +93,9 @@
             this.salesmanagement.AutoSize = true;
             this.salesmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesmanagement.ForeColor = System.Drawing.Color.DarkGreen;
-            this.salesmanagement.Location = new System.Drawing.Point(28, 350);
-            this.salesmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.salesmanagement.Location = new System.Drawing.Point(21, 284);
             this.salesmanagement.Name = "salesmanagement";
-            this.salesmanagement.Size = new System.Drawing.Size(218, 22);
+            this.salesmanagement.Size = new System.Drawing.Size(170, 17);
             this.salesmanagement.TabIndex = 3;
             this.salesmanagement.Text = "SALES MANAGEMENT\r\n";
             this.salesmanagement.Click += new System.EventHandler(this.salesmanagement_Click);
@@ -108,10 +105,9 @@
             this.dashboard.AutoSize = true;
             this.dashboard.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboard.ForeColor = System.Drawing.Color.DarkGreen;
-            this.dashboard.Location = new System.Drawing.Point(62, 186);
-            this.dashboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dashboard.Location = new System.Drawing.Point(46, 151);
             this.dashboard.Name = "dashboard";
-            this.dashboard.Size = new System.Drawing.Size(137, 22);
+            this.dashboard.Size = new System.Drawing.Size(107, 17);
             this.dashboard.TabIndex = 1;
             this.dashboard.Text = "DASHBOARD";
             this.dashboard.Click += new System.EventHandler(this.dashboard_Click_1);
@@ -121,10 +117,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(85, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -135,9 +130,9 @@
             this.nav_bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.nav_bar.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.nav_bar.Location = new System.Drawing.Point(0, 0);
-            this.nav_bar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nav_bar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nav_bar.Name = "nav_bar";
-            this.nav_bar.Size = new System.Drawing.Size(1924, 94);
+            this.nav_bar.Size = new System.Drawing.Size(1443, 76);
             this.nav_bar.TabIndex = 100;
             // 
             // panel2
@@ -146,10 +141,10 @@
             this.panel2.Controls.Add(this.lblUserInfo);
             this.panel2.Controls.Add(this.picUser);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1571, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(1178, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(353, 94);
+            this.panel2.Size = new System.Drawing.Size(265, 76);
             this.panel2.TabIndex = 23;
             // 
             // lblUserInfo
@@ -157,9 +152,10 @@
             this.lblUserInfo.AutoSize = true;
             this.lblUserInfo.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserInfo.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblUserInfo.Location = new System.Drawing.Point(75, 31);
+            this.lblUserInfo.Location = new System.Drawing.Point(56, 25);
+            this.lblUserInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserInfo.Name = "lblUserInfo";
-            this.lblUserInfo.Size = new System.Drawing.Size(88, 23);
+            this.lblUserInfo.Size = new System.Drawing.Size(68, 18);
             this.lblUserInfo.TabIndex = 9;
             this.lblUserInfo.Text = "hahaha";
             this.lblUserInfo.Click += new System.EventHandler(this.lblUserInfo_Click);
@@ -169,10 +165,10 @@
             this.picUser.BackColor = System.Drawing.Color.Transparent;
             this.picUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picUser.BackgroundImage")));
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picUser.Location = new System.Drawing.Point(17, 21);
-            this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picUser.Location = new System.Drawing.Point(13, 17);
+            this.picUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(49, 41);
+            this.picUser.Size = new System.Drawing.Size(37, 33);
             this.picUser.TabIndex = 9;
             this.picUser.TabStop = false;
             // 
@@ -185,26 +181,27 @@
             this.logOutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(147, 28);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(128, 26);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // Staff_Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.ClientSize = new System.Drawing.Size(1443, 839);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.nav_bar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Staff_Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff_Dashboard";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Staff_Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

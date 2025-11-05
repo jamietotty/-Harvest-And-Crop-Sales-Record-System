@@ -54,23 +54,37 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         private void LoadSales()
         {
-           
-
             using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
-                string query = "SELECT * FROM dbo.Sales_Records";
+                string query = @"
+            SELECT 
+                Crop,
+                DateOfSale,
+                Location AS [Sold To],
+                AmountSold AS [Quantity Sold],
+                TotalAmount AS [Total Amount],
+                MarketUnits AS [Market Units]
+            FROM dbo.Sales_Records";
+
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
 
-                datagrid_Sales.AutoGenerateColumns = true;
+                datagrid_Sales.AutoGenerateColumns = false;
+                datagrid_Sales.Columns.Clear();
                 datagrid_Sales.DataSource = dt;
-            }
 
-           
+                // Manually add columns to control order and header text
+                datagrid_Sales.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Crop", HeaderText = "Crop" });
+                datagrid_Sales.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "DateOfSale", HeaderText = "Date of Sale" });
+                datagrid_Sales.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Sold To", HeaderText = "Sold To" });
+                datagrid_Sales.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Quantity Sold", HeaderText = "Quantity Sold (kg)" });
+                datagrid_Sales.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Total Amount", HeaderText = "Total Amount (₱)" });
+                datagrid_Sales.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Market Units", HeaderText = "Market Units" });
+            }
         }
 
-     
+
         private void datagrid_Sales_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -88,7 +102,7 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         private void dashboard_Click(object sender, EventArgs e)
         {
-            Admin_Dashboard newAdmin = new Admin_Dashboard();
+            Staff_Dashboard newAdmin = new Staff_Dashboard();
             newAdmin.Show();
             this.Hide();
         }
