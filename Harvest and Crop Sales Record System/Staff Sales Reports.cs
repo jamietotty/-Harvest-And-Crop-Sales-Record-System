@@ -113,5 +113,10 @@ namespace Harvest_and_Crop_Sales_Record_System
                 lblUserInfo.Text = Session.LoggedInUser.Username;
             }
         }
+
+        private void datagrid_Sales_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Sales_Management));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.harvestmanagement = new System.Windows.Forms.Label();
             this.salesreports = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datagrid_Sales = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.nav_bar.SuspendLayout();
@@ -64,6 +65,7 @@
             this.panel1.Controls.Add(this.salesmanagement);
             this.panel1.Controls.Add(this.dashboard);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
@@ -99,8 +101,9 @@
             // salesmanagement
             // 
             this.salesmanagement.AutoSize = true;
+            this.salesmanagement.BackColor = System.Drawing.Color.SeaGreen;
             this.salesmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salesmanagement.ForeColor = System.Drawing.Color.DarkGreen;
+            this.salesmanagement.ForeColor = System.Drawing.Color.Ivory;
             this.salesmanagement.Location = new System.Drawing.Point(28, 350);
             this.salesmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.salesmanagement.Name = "salesmanagement";
@@ -187,7 +190,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(314, 130);
+            this.label1.Location = new System.Drawing.Point(333, 173);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 74);
@@ -217,26 +220,26 @@
             this.datagrid_Sales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid_Sales.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.datagrid_Sales.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.NullValue = null;
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagrid_Sales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid_Sales.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.datagrid_Sales.Location = new System.Drawing.Point(374, 210);
+            this.datagrid_Sales.Location = new System.Drawing.Point(401, 267);
             this.datagrid_Sales.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagrid_Sales.Name = "datagrid_Sales";
             this.datagrid_Sales.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.datagrid_Sales.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.datagrid_Sales.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.datagrid_Sales.RowTemplate.Height = 24;
             this.datagrid_Sales.Size = new System.Drawing.Size(1449, 677);
             this.datagrid_Sales.TabIndex = 115;
@@ -249,13 +252,22 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button1.Location = new System.Drawing.Point(1522, 130);
+            this.button1.Location = new System.Drawing.Point(1549, 155);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(301, 53);
             this.button1.TabIndex = 116;
             this.button1.Text = "+  Add New";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel6.Location = new System.Drawing.Point(3, 336);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(277, 52);
+            this.panel6.TabIndex = 121;
             // 
             // Staff_Sales_Management
             // 
@@ -302,5 +314,6 @@
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.DataGridView datagrid_Sales;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel6;
     }
 }

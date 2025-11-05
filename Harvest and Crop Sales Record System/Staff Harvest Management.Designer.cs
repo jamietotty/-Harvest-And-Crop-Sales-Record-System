@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Harvest_Management));
             this.label1 = new System.Windows.Forms.Label();
             this.datagrid_Harvestr = new System.Windows.Forms.DataGridView();
@@ -49,6 +50,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUserInfo = new System.Windows.Forms.Label();
             this.picUser = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Harvestr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSet)).BeginInit();
@@ -65,9 +67,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(235, 106);
+            this.label1.Location = new System.Drawing.Point(345, 173);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 62);
+            this.label1.Size = new System.Drawing.Size(356, 74);
             this.label1.TabIndex = 104;
             this.label1.Text = "HARVEST RECORDS\r\n\r\n";
             // 
@@ -77,29 +80,37 @@
             this.datagrid_Harvestr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid_Harvestr.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.datagrid_Harvestr.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Harvestr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.NullValue = null;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Harvestr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.datagrid_Harvestr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid_Harvestr.DataSource = this.hCSRSdbDataSetBindingSource;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagrid_Harvestr.DefaultCellStyle = dataGridViewCellStyle5;
             this.datagrid_Harvestr.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.datagrid_Harvestr.Location = new System.Drawing.Point(289, 181);
-            this.datagrid_Harvestr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datagrid_Harvestr.Location = new System.Drawing.Point(385, 267);
+            this.datagrid_Harvestr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagrid_Harvestr.Name = "datagrid_Harvestr";
             this.datagrid_Harvestr.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            this.datagrid_Harvestr.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.datagrid_Harvestr.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.datagrid_Harvestr.RowTemplate.Height = 24;
-            this.datagrid_Harvestr.Size = new System.Drawing.Size(1087, 550);
+            this.datagrid_Harvestr.Size = new System.Drawing.Size(1449, 677);
             this.datagrid_Harvestr.TabIndex = 105;
             this.datagrid_Harvestr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Harvestr_CellContentClick);
             // 
@@ -122,12 +133,12 @@
             this.logOutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(128, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(147, 28);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -138,10 +149,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button1.Location = new System.Drawing.Point(1150, 115);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(1533, 155);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 43);
+            this.button1.Size = new System.Drawing.Size(301, 53);
             this.button1.TabIndex = 107;
             this.button1.Text = "+  Add New";
             this.button1.UseVisualStyleBackColor = false;
@@ -155,20 +166,23 @@
             this.panel1.Controls.Add(this.salesmanagement);
             this.panel1.Controls.Add(this.dashboard);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 847);
+            this.panel1.Size = new System.Drawing.Size(280, 1042);
             this.panel1.TabIndex = 109;
             // 
             // harvestmanagement
             // 
             this.harvestmanagement.AutoSize = true;
+            this.harvestmanagement.BackColor = System.Drawing.Color.SeaGreen;
             this.harvestmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.harvestmanagement.ForeColor = System.Drawing.Color.DarkGreen;
-            this.harvestmanagement.Location = new System.Drawing.Point(11, 217);
+            this.harvestmanagement.ForeColor = System.Drawing.Color.Ivory;
+            this.harvestmanagement.Location = new System.Drawing.Point(15, 267);
+            this.harvestmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.harvestmanagement.Name = "harvestmanagement";
-            this.harvestmanagement.Size = new System.Drawing.Size(197, 17);
+            this.harvestmanagement.Size = new System.Drawing.Size(256, 22);
             this.harvestmanagement.TabIndex = 103;
             this.harvestmanagement.Text = "HARVEST MANAGEMENT\r\n";
             this.harvestmanagement.Click += new System.EventHandler(this.harvestmanagement_Click_1);
@@ -178,9 +192,10 @@
             this.salesreports.AutoSize = true;
             this.salesreports.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesreports.ForeColor = System.Drawing.Color.DarkGreen;
-            this.salesreports.Location = new System.Drawing.Point(46, 340);
+            this.salesreports.Location = new System.Drawing.Point(61, 418);
+            this.salesreports.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.salesreports.Name = "salesreports";
-            this.salesreports.Size = new System.Drawing.Size(128, 17);
+            this.salesreports.Size = new System.Drawing.Size(162, 22);
             this.salesreports.TabIndex = 5;
             this.salesreports.Text = "SALES REPORTS";
             this.salesreports.Click += new System.EventHandler(this.salesreports_Click_1);
@@ -190,9 +205,10 @@
             this.salesmanagement.AutoSize = true;
             this.salesmanagement.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesmanagement.ForeColor = System.Drawing.Color.DarkGreen;
-            this.salesmanagement.Location = new System.Drawing.Point(21, 284);
+            this.salesmanagement.Location = new System.Drawing.Point(28, 350);
+            this.salesmanagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.salesmanagement.Name = "salesmanagement";
-            this.salesmanagement.Size = new System.Drawing.Size(170, 17);
+            this.salesmanagement.Size = new System.Drawing.Size(218, 22);
             this.salesmanagement.TabIndex = 3;
             this.salesmanagement.Text = "SALES MANAGEMENT\r\n";
             this.salesmanagement.Click += new System.EventHandler(this.salesmanagement_Click_1);
@@ -202,9 +218,10 @@
             this.dashboard.AutoSize = true;
             this.dashboard.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboard.ForeColor = System.Drawing.Color.DarkGreen;
-            this.dashboard.Location = new System.Drawing.Point(46, 151);
+            this.dashboard.Location = new System.Drawing.Point(61, 186);
+            this.dashboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dashboard.Name = "dashboard";
-            this.dashboard.Size = new System.Drawing.Size(107, 17);
+            this.dashboard.Size = new System.Drawing.Size(137, 22);
             this.dashboard.TabIndex = 1;
             this.dashboard.Text = "DASHBOARD";
             this.dashboard.Click += new System.EventHandler(this.dashboard_Click_1);
@@ -214,9 +231,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(64, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox1.Size = new System.Drawing.Size(93, 86);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -227,9 +245,9 @@
             this.nav_bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.nav_bar.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.nav_bar.Location = new System.Drawing.Point(0, 0);
-            this.nav_bar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nav_bar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nav_bar.Name = "nav_bar";
-            this.nav_bar.Size = new System.Drawing.Size(1443, 76);
+            this.nav_bar.Size = new System.Drawing.Size(1924, 94);
             this.nav_bar.TabIndex = 108;
             // 
             // panel2
@@ -238,10 +256,10 @@
             this.panel2.Controls.Add(this.lblUserInfo);
             this.panel2.Controls.Add(this.picUser);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1178, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(1571, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(265, 76);
+            this.panel2.Size = new System.Drawing.Size(353, 94);
             this.panel2.TabIndex = 23;
             // 
             // lblUserInfo
@@ -249,10 +267,9 @@
             this.lblUserInfo.AutoSize = true;
             this.lblUserInfo.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserInfo.ForeColor = System.Drawing.Color.Honeydew;
-            this.lblUserInfo.Location = new System.Drawing.Point(56, 25);
-            this.lblUserInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserInfo.Location = new System.Drawing.Point(75, 31);
             this.lblUserInfo.Name = "lblUserInfo";
-            this.lblUserInfo.Size = new System.Drawing.Size(68, 18);
+            this.lblUserInfo.Size = new System.Drawing.Size(88, 23);
             this.lblUserInfo.TabIndex = 9;
             this.lblUserInfo.Text = "hahaha";
             this.lblUserInfo.Click += new System.EventHandler(this.lblUserInfo_Click_1);
@@ -262,25 +279,34 @@
             this.picUser.BackColor = System.Drawing.Color.Transparent;
             this.picUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picUser.BackgroundImage")));
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picUser.Location = new System.Drawing.Point(13, 17);
-            this.picUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picUser.Location = new System.Drawing.Point(17, 21);
+            this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(37, 33);
+            this.picUser.Size = new System.Drawing.Size(49, 41);
             this.picUser.TabIndex = 9;
             this.picUser.TabStop = false;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel6.Location = new System.Drawing.Point(3, 253);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(277, 52);
+            this.panel6.TabIndex = 120;
+            // 
             // Staff_Harvest_Management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 839);
+            this.ClientSize = new System.Drawing.Size(1924, 1033);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.nav_bar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.datagrid_Harvestr);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Staff_Harvest_Management";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff_Harvest_Management";
@@ -319,5 +345,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblUserInfo;
         private System.Windows.Forms.PictureBox picUser;
+        private System.Windows.Forms.Panel panel6;
     }
 }

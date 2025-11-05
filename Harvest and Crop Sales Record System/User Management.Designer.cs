@@ -40,6 +40,7 @@
             this.usermanagement = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.nav_bar = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUserInfo = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUser = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Accounts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hCSRSdbDataSetBindingSource)).BeginInit();
@@ -174,11 +174,19 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(85, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(93, 86);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel3.Location = new System.Drawing.Point(3, 255);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(277, 52);
+            this.panel3.TabIndex = 118;
             // 
             // nav_bar
             // 
@@ -261,14 +269,6 @@
             this.addUser.Text = "+  Add New";
             this.addUser.UseVisualStyleBackColor = false;
             this.addUser.Click += new System.EventHandler(this.addUser_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.panel3.Location = new System.Drawing.Point(3, 255);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(277, 52);
-            this.panel3.TabIndex = 118;
             // 
             // label1
             // 
