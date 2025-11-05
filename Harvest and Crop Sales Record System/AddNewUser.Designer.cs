@@ -83,6 +83,7 @@
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.Size = new System.Drawing.Size(236, 20);
             this.passwordTxt.TabIndex = 25;
+            this.passwordTxt.UseSystemPasswordChar = true;
             // 
             // usernameTxt
             // 
