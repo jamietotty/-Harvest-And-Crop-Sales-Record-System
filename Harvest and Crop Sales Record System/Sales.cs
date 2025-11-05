@@ -110,12 +110,7 @@ namespace Harvest_and_Crop_Sales_Record_System
             this.Hide();
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-            Reports newReports = new Reports();
-            newReports.Show();
-            this.Hide();
-        }
+
 
         private void lblUserInfo_Click_1(object sender, EventArgs e)
         {
@@ -123,11 +118,5 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         }
 
-        private void inventoryrecords_Click(object sender, EventArgs e)
-        {
-            Reports newReports = new Reports();
-            newReports.Show();
-            this.Hide();
-        }
     }
 }

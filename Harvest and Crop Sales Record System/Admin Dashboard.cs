@@ -189,12 +189,7 @@ namespace Harvest_and_Crop_Sales_Record_System
             this.Hide();
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-            Reports newReport = new Reports();
-            newReport.Show();
-            this.Hide();
-        }
+   
 
         private void label5_Click(object sender, EventArgs e)
         {

@@ -83,6 +83,8 @@ namespace Harvest_and_Crop_Sales_Record_System
                 };
                 datagrid_Accounts.Columns.Add(editButton);
 
+
+
                 // Delete button
                 DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn
                 {
@@ -191,12 +193,7 @@ namespace Harvest_and_Crop_Sales_Record_System
             this.Hide();
         }
 
-        private void inventoryrecords_Click(object sender, EventArgs e)
-        {
-            Reports newReports = new Reports();
-            newReports.Show();
-            this.Hide();
-        }
+   
 
         private void lblUserInfo_Click(object sender, EventArgs e)
         {
@@ -230,6 +227,11 @@ namespace Harvest_and_Crop_Sales_Record_System
             {
                 LoadUsers();
             }
+        }
+
+        private void datagrid_Accounts_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
