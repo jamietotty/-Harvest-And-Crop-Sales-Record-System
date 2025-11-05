@@ -26,12 +26,19 @@ namespace Harvest_and_Crop_Sales_Record_System
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
+            string username = txt_username.Text.Trim();
+            string password = txt_password.Text.Trim();
 
-            string username = txt_username.Text;
-            string password = txt_password.Text;
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please enter both username and password.", "Missing Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            string query = "SELECT TOP 1 AccountID, Username, Role FROM Accounts " +
-                           "WHERE Username = @username AND Password = @password";
+            string query = @"
+        SELECT TOP 1 AccountID, Username, Role, Status 
+        FROM Accounts 
+        WHERE Username = @username AND Password = @password";
 
             using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
@@ -39,19 +46,27 @@ namespace Harvest_and_Crop_Sales_Record_System
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password); // ⚠️ plain text for now
+                    cmd.Parameters.AddWithValue("@password", password); 
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
                     if (reader.Read())
                     {
-
                         string loggedInUsername = reader["Username"].ToString();
                         string loggedInRole = reader["Role"].ToString();
-                        // ✅ Close reader before another query
+                        string status = reader["Status"].ToString();
+
+                        // 
+                        if (!status.Equals("Active", StringComparison.OrdinalIgnoreCase))
+                        {
+                            MessageBox.Show("Your account is inactive. Please contact the admin for help",
+                                            "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            reader.Close();
+                            return;
+                        }
+
                         reader.Close();
 
-                        // ✅ Update LastLogin to current time
                         using (SqlCommand updateCmd = new SqlCommand(
                             "UPDATE Accounts SET LastLogin = GETDATE() WHERE Username = @username", conn))
                         {
@@ -59,18 +74,14 @@ namespace Harvest_and_Crop_Sales_Record_System
                             updateCmd.ExecuteNonQuery();
                         }
 
-
-
-                        // Create user object from database
                         User user = new User(
-                            loggedInUsername.ToString(),
-                            "", // we don’t need to carry the password around
-                           loggedInRole.ToString()
+                            loggedInUsername,
+                            "", 
+                            loggedInRole
                         );
 
-                        Session.LoggedInUser = user; // store globally
+                        Session.LoggedInUser = user;
 
-                        // ✅ Role-based navigation
                         if (user.Role == "Admin")
                         {
                             Admin_Dashboard newAdmin = new Admin_Dashboard();
@@ -86,7 +97,7 @@ namespace Harvest_and_Crop_Sales_Record_System
                     }
                     else
                     {
-                        MessageBox.Show("Invalid username, password, or role. Please try again.");
+                        MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

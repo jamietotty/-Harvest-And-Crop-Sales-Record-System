@@ -46,6 +46,7 @@ namespace Harvest_and_Crop_Sales_Record_System
                         usernameTxt.Text = reader["Username"].ToString();
                         passwordTxt.Text = reader["Password"].ToString();
                         roleTxt.Text = reader["Role"].ToString();
+                        comboBox1.Text = reader["Status"].ToString();
                     }
                 }
             }
@@ -62,7 +63,8 @@ namespace Harvest_and_Crop_Sales_Record_System
             string email = emailTxt.Text.Trim();
             string username = usernameTxt.Text.Trim();
             string password = passwordTxt.Text.Trim();
-            string role = roleTxt.Text.Trim();       
+            string role = roleTxt.Text.Trim(); 
+            string statusVar = comboBox1.Text.Trim();
 
             if (string.IsNullOrEmpty(lastName) ||
                 string.IsNullOrEmpty(firstName) ||
@@ -92,15 +94,16 @@ namespace Harvest_and_Crop_Sales_Record_System
                               Email = @Email,
                               Username = @Username,
                               Password = @Password,
-                              Role = @Role
+                              Role = @Role,
+                              Status = @Status
                           WHERE AccountID = @AccountID";
                     }
                     else
                     {
                         // Insert new account
                         query = @"INSERT INTO Accounts 
-                          (LastName, FirstName, Email, Username, Password, Role, DateCreated)
-                          VALUES (@LastName, @FirstName, @Email, @Username, @Password, @Role, GETDATE())";
+                          (LastName, FirstName, Email, Username, Password, Role, DateCreated, Status)
+                          VALUES (@LastName, @FirstName, @Email, @Username, @Password, @Role, GETDATE(), @Status)";
                     }
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -111,6 +114,7 @@ namespace Harvest_and_Crop_Sales_Record_System
                         cmd.Parameters.AddWithValue("@Username", username);
                         cmd.Parameters.AddWithValue("@Password", password);
                         cmd.Parameters.AddWithValue("@Role", role);
+                        cmd.Parameters.AddWithValue("@Status", statusVar);
 
                         if (editingUserId.HasValue)
                             cmd.Parameters.AddWithValue("@AccountID", editingUserId.Value);
