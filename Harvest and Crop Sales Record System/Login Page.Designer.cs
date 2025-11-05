@@ -57,7 +57,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(149, 119);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(467, 537);
             this.panel1.TabIndex = 3;
@@ -67,7 +67,7 @@
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.txt_username);
             this.panel2.Location = new System.Drawing.Point(70, 213);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(332, 42);
             this.panel2.TabIndex = 14;
@@ -79,7 +79,7 @@
             this.txt_username.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_username.Location = new System.Drawing.Point(18, 11);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(2);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(294, 19);
             this.txt_username.TabIndex = 6;
@@ -92,7 +92,7 @@
             this.loginbtn.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginbtn.ForeColor = System.Drawing.Color.White;
             this.loginbtn.Location = new System.Drawing.Point(67, 436);
-            this.loginbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginbtn.Margin = new System.Windows.Forms.Padding(2);
             this.loginbtn.Name = "loginbtn";
             this.loginbtn.Size = new System.Drawing.Size(334, 46);
             this.loginbtn.TabIndex = 8;
@@ -144,7 +144,7 @@
             this.panel3.Controls.Add(this.closed);
             this.panel3.Controls.Add(this.txt_password);
             this.panel3.Location = new System.Drawing.Point(70, 292);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(332, 42);
             this.panel3.TabIndex = 15;
@@ -155,7 +155,7 @@
             this.open.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("open.BackgroundImage")));
             this.open.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.open.Location = new System.Drawing.Point(274, 10);
-            this.open.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.open.Margin = new System.Windows.Forms.Padding(2);
             this.open.Name = "open";
             this.open.Size = new System.Drawing.Size(30, 24);
             this.open.TabIndex = 12;
@@ -168,7 +168,7 @@
             this.closed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closed.BackgroundImage")));
             this.closed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.closed.Location = new System.Drawing.Point(274, 10);
-            this.closed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closed.Margin = new System.Windows.Forms.Padding(2);
             this.closed.Name = "closed";
             this.closed.Size = new System.Drawing.Size(30, 24);
             this.closed.TabIndex = 13;
@@ -182,7 +182,7 @@
             this.txt_password.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_password.Location = new System.Drawing.Point(18, 12);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(2);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(294, 19);
             this.txt_password.TabIndex = 7;
@@ -197,10 +197,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1155, 687);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login_Page";
             this.Text = "Login_Page";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

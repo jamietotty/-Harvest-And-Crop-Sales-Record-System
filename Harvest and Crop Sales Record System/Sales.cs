@@ -35,13 +35,31 @@ namespace Harvest_and_Crop_Sales_Record_System
 
             using (SqlConnection conn = new SqlConnection(DbConfig.ConnectionString))
             {
-                string query = "SELECT * FROM dbo.Sales_Records";
+                string query = @"
+            SELECT 
+                Crop,
+                DateOfSale,
+                Location AS [Sold To],
+                AmountSold AS [Quantity Sold],
+                TotalAmount AS [Total Amount],
+                MarketUnits AS [Market Units]
+            FROM dbo.Sales_Records";
+
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
 
-                datagrid_Salesr.AutoGenerateColumns = true;
+                datagrid_Salesr.AutoGenerateColumns = false;
+                datagrid_Salesr.Columns.Clear();
                 datagrid_Salesr.DataSource = dt;
+
+                // Manually add columns to control order and header text
+                datagrid_Salesr.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Crop", HeaderText = "Crop" });
+                datagrid_Salesr.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "DateOfSale", HeaderText = "Date of Sale" });
+                datagrid_Salesr.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Sold To", HeaderText = "Sold To" });
+                datagrid_Salesr.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Quantity Sold", HeaderText = "Quantity Sold (kg)" });
+                datagrid_Salesr.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Total Amount", HeaderText = "Total Amount (₱)" });
+                datagrid_Salesr.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Market Units", HeaderText = "Market Units" });
             }
         }
 
@@ -103,6 +121,13 @@ namespace Harvest_and_Crop_Sales_Record_System
         {
             contextMenuStrip1.Show(lblUserInfo, new Point(0, lblUserInfo.Height));
 
+        }
+
+        private void inventoryrecords_Click(object sender, EventArgs e)
+        {
+            Reports newReports = new Reports();
+            newReports.Show();
+            this.Hide();
         }
     }
 }
